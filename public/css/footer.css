@@ -1,0 +1,89 @@
+#footer{
+    padding:28px 0 20px;
+    background-color: #333;
+}
+
+/* 上 */
+#footer .container:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    padding-top:10px;
+}
+
+#footer .container dl{
+    flex-basis: 20%;
+}
+
+#footer .container dl dt h2{
+    font-size:14px;
+    font-family: "微软雅黑";
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#footer .container dl dd{
+    border-left:1px solid #666;
+    padding-bottom: 10px;
+}
+#footer .container dl dd:last-of-type{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#footer .container dl dd:hover h3{
+    color: #dc1720;
+}
+
+#footer .container dl dd h3{
+    font-size: 12px;
+    font-family: "宋体";
+    color:#999;
+    font-weight: lighter;
+    padding-left:20px;
+}   
+
+
+
+/* 中 */
+
+#footer .container:nth-of-type(2){
+    display: flex;
+    justify-content: flex-start;
+    margin-top:75px;
+    margin-bottom: 20px;
+}
+
+#footer .container:nth-of-type(2) div ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .container:nth-of-type(2) .icon{
+    width:32px;
+    height: 32px;
+}
+
+#footer .container:nth-of-type(2) div{
+    margin-right: 40px;
+}
+
+#footer .container:nth-of-type(2) div img{
+    margin-bottom: 20px;
+}
+
+#footer .container:nth-of-type(2) div:not(:first-child) p{
+    text-align: center;
+    font-size: 12px;
+    color:#fff;
+    font-family: "微软雅黑";
+}
+
+#footer .container:last-of-type p{
+    color:#999;
+    text-align: left;
+    font-size:12px;
+    font-family: "宋体";
+}
+
+

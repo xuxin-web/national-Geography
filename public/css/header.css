@@ -1,0 +1,319 @@
+
+#header .part-one{
+    background-color: #333;
+}
+
+#header .part-one .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .part-one .logo .search{
+    position: relative;
+}
+
+#header .part-one .logo .search .search_input{
+    box-sizing: border-box;
+    background-color: rgb(82,83,90);
+    color:#fff;
+    padding: 0 30px 0 10px;
+    border:none;
+    width:285px;
+    height: 30px;
+}
+
+#header .part-one .logo .search .search_btn{
+    position: absolute;
+    width:16px;
+    height: 16px;
+    right:7px;
+    top:50%;
+    margin-top:-8px;
+}
+
+#header .part-two{
+    background-color: #222;
+    color:#fff;
+}
+#header .part-two a{
+    color:#fff;
+}
+
+#header .part-two .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#header .part-two .container .menu{
+    display: flex;
+    font: 16px "微软雅黑";
+}
+
+#header .part-two .container .menu li{
+    box-sizing: border-box;
+    height: 50px;
+    width:75px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    position: relative;
+}
+
+#header .part-two .container .menu li.active{
+    border-bottom: 4px solid #dc1720;
+}
+
+#header .part-two .container .menu li:first-of-type:hover{
+    background-color: #dc1720;
+}
+
+#header .part-two .container .menu li.active:nth-of-type(2){
+    border-bottom-color:#00c3c3;
+}
+
+
+#header .part-two .container .menu li:nth-of-type(2):hover{
+    background-color: #00c3c3;
+}
+
+
+#header .part-two .container .menu li.active:nth-of-type(3){
+    border-bottom-color:#cb8de7;
+}
+
+#header .part-two .container .menu li:nth-of-type(3):hover{
+    background-color: #cb8de7;
+}
+
+#header .part-two .container .menu li.active:nth-of-type(4){
+    border-bottom-color:#00a53c;
+}
+
+#header .part-two .container .menu li:nth-of-type(4):hover{
+    background-color: #00a53c;
+}
+
+#header .part-two .container .menu li.active:nth-of-type(5){
+    border-bottom-color:#fa5f00;
+}
+
+#header .part-two .container .menu li:nth-of-type(5):hover{
+    background-color: #fa5f00;
+}
+
+
+#header .part-two .container .tools{
+    display: flex;
+}
+#header .part-two .container .tools>li{
+    display: flex;
+    grid-template: 50px;
+    line-height: 50px;
+}
+
+#header .part-two .container .tools>li,
+#header .part-two .container .tools>li>a{
+    display: block;
+    width:50px;
+    height: 50px;
+    text-align: center;
+}
+
+#header .part-two .container .tools li:first-of-type a{
+    height: 100%;
+    color: #fff;
+}
+
+#header .part-two .container .tools li:first-of-type{
+    background-color:#1d95d9;
+    color: #fff;
+    text-align: center;
+}
+
+#header .part-two .container .tools #login-box{
+    position: relative;
+}
+
+#header .part-two .container .tools #login-box:hover{
+    background-color: #323232;
+    border-color:transparent;
+    z-index: 1000;
+}
+
+#header .part-two .container .tools #login-box .login {
+    position: absolute;
+    right:0;
+    bottom:-90px;
+    overflow: hidden;
+    width:207px;
+    height: 90px;
+    background-color: #323232; 
+    box-shadow: 0 2px 2px #000;
+    display: none;
+}
+
+
+#header .part-two .container .tools #login-box:hover .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#header .part-two .container .tools #login-box .login span{
+    margin:0 5px;
+    color: #fff;
+    font-size:12px;
+    font-family: "微软雅黑";
+}
+
+#header .part-two .container .tools li:last-of-type .login a{
+    color: #fff;
+    font-size:12px;
+    font-family: "微软雅黑";
+}
+
+#header .part-two .container .tools .login-item{
+    all:initial;
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#header .part-two .container .tools .login-item:first-of-type{
+    margin: 10px 20px;
+    background-color: #444;
+    color:#fff;
+}
+
+#header .mask-pop{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    -ms-filter: "alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    z-index: 1200;
+}
+
+#header .mask-pop.active{
+    display: block;
+}
+
+#header .mask-pop .login{
+    width: 400px;
+    height: 260px;
+    left: 50%;
+    top: 50%;
+    margin-top: -130px;
+    margin-left: -200px;
+    overflow: hidden;
+    position: absolute;
+    background: #fff;
+    transition: all .8s ease .2s;
+    /* transform: scale(0.3); */
+}
+
+#header .mask-pop .login h2{
+    height: 40px;
+    line-height: 40px;
+    font-size:12px;
+    font-family: "宋体";
+    padding: 0 20px;
+    background-color: #f43e3e;
+    font-weight: 700;
+    color:#fff;
+}
+
+#header .mask-pop .login a{
+    color:#000;
+    font-size:12px;
+}
+
+#header .mask-pop .login .close{
+    font-family: "微软雅黑";
+    float: right;
+    cursor: pointer;
+}
+
+#header .mask-pop .login form{
+    margin-top:30px;
+}
+
+#header .mask-pop .login form .input-line{
+    margin-left: 50px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    position: relative;
+    height: auto;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+#header .mask-pop .login form .input-line input[type="text"]{
+    height: 30px;
+    width: 200px;
+    margin: 0 20px 0 0;
+    padding: 5px 15px;
+    border: 1px solid #c9c9c9;
+}
+
+#header .mask-pop .login form .input-line:nth-of-type(3){
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#header .mask-pop .login form .input-line:nth-of-type(3) label{
+    margin-left: 10px;
+}
+
+#header .mask-pop .login form .input-line:last-of-type{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#header .mask-pop .login form #login-err{
+    left: 51px;
+    position: absolute;
+    font-size:12px;
+    top: 46px;
+    width: 300px;
+    color: red;
+}
+
+
+#header .mask-pop .login form .input-line:last-of-type button{
+    width: 150px;
+    height: 32px;
+    border: none;
+    border-bottom: 2px solid #303030;
+    border-right: 1px solid #7b7b7b;
+    background-color: #535353;
+    color: #fff;
+    font-family: "宋体";
+    font-weight: 700;
+    line-height: 32px;
+    margin-right:20px;
+}
+
+#header .msg{
+    position: absolute;
+    right:160px;
+    top:50%;
+    color:red;
+    margin-top:-11px;
+}

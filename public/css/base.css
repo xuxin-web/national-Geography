@@ -1,0 +1,120 @@
+*{
+    /* 全部使用border-box */
+    padding:0;
+    margin:0;
+    box-sizing: border-box !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+#main{
+    position: relative;
+}
+
+
+.container{
+    width:1260px;
+    margin:0 auto;
+}
+
+.icon{
+    background: url(../imgs/icons.png) no-repeat;
+    overflow: hidden;
+}
+
+.icon-activity-star{
+    padding-left: 30px;
+    background-position: -191px -941px;
+}
+
+.icon-cart{
+    padding-left: 30px;
+    background-position: -81px -143px;
+}
+
+.icon-people{
+    background-position: -154px -99px;
+    cursor: pointer;
+}
+
+.icon-weixin{
+    background-position: -168px -70px;
+}
+
+.icon-sina{
+    background-position: -208px -71px;
+}
+
+.icon-ff{
+    background-position: -244px -70px;
+}
+
+.icon-tt{
+    background-position: -277px -70px;
+}
+
+.icon-cng{
+    background-position: -312px -70px;
+}
+.icon-login{
+    background-image: url(../imgs/noavatar_small.gif);
+    background-position: center center;
+    background-size: 80%;
+    border-radius: 5px;
+}
+
+.icon-magazine-cng{
+    width: 24px;
+    height: 24px;
+    background-position: -303px -538px;
+    cursor: pointer;
+}
+
+.icon-small-share{
+    width: 18px;
+    height: 18px;
+    background-position: -496px -512px;
+}
+.icon-open-sidebar{
+    background-position: -260px 2px;
+    width: 133px;
+    height: 55px;
+    position: absolute;
+    right: -22px;
+    top: -33px;
+    display: none;
+    cursor: pointer;
+}
+.icon-head {
+    display: inline-block;
+    background-position: -254px -745px;
+    width: 16px;
+    height: 19px;
+}
+
+ul{
+    list-style: none;
+}
+
+iframe.header{
+    height: 100vh;
+    width:100%;
+    position: relative;
+    z-index:1000;
+}
+
+iframe.footer{
+    width: 100%;
+    height: 462px;
+}
+
+.clearMargin-top::before{
+    content: "";
+    display: table;
+}

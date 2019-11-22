@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(219, 221, 224);
+}
+.article-page{
+    width:870px;
+    margin: 0 auto;
+}
+
+#main .banner{
+    margin:30px auto 20px;
+}
+
+#main .copyright,
+#main .article{
+    padding:40px 100px;
+    background-color: #fff;
+    line-height: 26px;
+}
+
+#main .article h1{
+    color: #333;
+    font-family: -apple-system-font,"Microsoft YaHei","Helvetica Neue","PingFang SC","Hiragino Sans GB",sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+#main .article .tips{
+    text-indent: 0;
+    color: #aeaeae;
+    font-family:"宋体";
+    font-size:12px;
+    margin-top:14px;
+    margin-bottom:20px;
+}
+
+#main .article hr{
+    margin:30px 0;
+    background-color: #cacacc;
+    height: 1px;
+    border:none;
+    border-radius: 1px;
+}
+
+#main .article p{
+    font-size:14px;
+    text-indent: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color:#333;
+}
+
+#main .article img{
+    width:100%;
+}
+
+#main .article .img-box{
+    padding: 20px 0 25px;
+    border-bottom:1px solid #cacacc;
+    margin-bottom:10px;
+}
+
+#main .article .img-box p{
+    text-indent: 0;
+    margin:0;
+}
+
+#main .copyright{
+    font-family: "宋体";
+    font-size:12px;
+    text-align: center;
+}
+
+
+#main .copyright .line-dot{
+    border-top: 1px dotted #cacacc;
+    height: 26px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    font-family: "宋体";
+}
+
+#main .copyright .line-dot span{
+    position: absolute;
+    top:50%;
+    margin-top:-24px;
+    background-color: #fff;
+    padding:0 10px;
+}

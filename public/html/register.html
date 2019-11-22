@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <div class="container">
+            <a href="./index.html"><img src="../imgs/logo.jpg" alt=""></a>
+            <ul>
+                <li><a href="./index.html">网站首页</a></li>
+                <li><a href="#">客户端下载</a></li>
+                <li><a href="#">地理商城</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 主体 -->
+    <main id="main">
+        <div class="container">
+            <h1 class="title">注册中国国家地理网首页</h1>
+            
+            <div class="inputline">
+                <div>
+                    <label for="name">*用户名：</label>
+                    <input type="text" id="name">
+                    <em class="no"></em>
+                </div>
+                <p class="text_info">中英文、数字均可，10个字符（5个汉字）以内，空格除外</p>
+            </div>
+
+            <div class="inputline">
+                <div>
+                    <label for="pwd">*密 码：</label>
+                    <input type="password" id="pwd">
+                </div>
+                <p class="text_info">中英文、数字均可，10个字符（5个汉字）以内，空格除外</p>
+            </div>
+            <div class="inputline">
+                <div>
+                    <label for="cpwd">*确认密码：</label>
+                    <input type="password
+                    " id="cpwd">
+                    <em class="no"></em>
+                </div>
+                <p class="text_info">请再次输入密码</p>
+            </div>
+            <div class="inputline">
+                <div>
+                    <label for="name">*电子邮件：</label>
+                    <input type="text" id="name">
+                    <em class="no"></em>
+                </div>
+                <p class="text_info">建议使用qq、163、126、gmail、sina、sohu、yahoo、hotmail等邮箱</p>
+            </div>
+            <div class="inputline">
+                <div>
+                    <label for="name">*验证码：</label>
+                    <input type="text" id="name">
+                    <img src="../imgs/index.png" alt="耗顶">
+                    <em class="no"></em>
+                </div>
+                <p class="text_info">请输入图片中的字符</p>
+
+            </div>
+            <p class="tiaokuan">点击注册按钮表示您已同意并接受《中国国家地理网服务协议》</p>
+            <div class="inputline">
+                <button id="reg_btn"></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer id="footer">
+        <div class="container">
+            <p>Copyright © 2001-2019 Chinese National Geography Press. All rights reserved. 
+                <br>
+                <an>优秀科普网站</a>
+                <a href="#">京ICP证090072号</a>
+                <a href="#">京ICP备10014304号</a>
+                <a href="#">新出网证（京）字 049号</a>
+                <a href="#">出版物经营许可证</a>
+                <a href="#">360网站安全检测平台</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+            var login = document.querySelector("#login"),
+                close = document.querySelector(".close"),
+                pop = document.querySelector("#pop");
+    
+            close.addEventListener("click",function(){
+                pop.classList.remove("active");
+            });
+    
+            login.addEventListener("click", function (event) {
+                event.preventDefault();
+                if ("active" in pop.classList) {
+                    pop.classList.remove("active");
+                }
+                else {
+                    pop.classList.add("active");
+                }
+            })
+        </script>
+</body>
+
+</html>

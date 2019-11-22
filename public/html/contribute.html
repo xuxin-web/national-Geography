@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>投稿|中国国家地理网</title>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contribute.css">
+</head>
+
+<body>
+    <!-- 页首 -->
+    <header id="header">
+        <!-- 上部分 -->
+        <div class="part-one">
+            <div class="container logo">
+                <a href="./index.html"><img src="../imgs/logo-top.png" alt="国家地理"></a>
+                <div class="search">
+                    <input type="text" class="search_input">
+                    <img src="../imgs/search_btn.png" alt="search btn" class="search_btn">
+                </div>
+            </div>
+        </div>
+        <!-- 下部分 -->
+        <div class="part-two">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="gallery.html">画廊</a></li>
+                    <li><a href="sight.html">景观</a></li>
+                    <li class="icon icon-activity-star"><a href="activity.html">活动</a></li>
+                </ul>
+                <ul class="tools">
+                    <li><a href="contribute.html">投稿</a></li>
+                    <li id="login-box">
+                        <a class="icon icon-people"></a>
+                        <div class="login">
+                            <div class="login-item">
+                                <a href="#" id="login">登录</a>
+                                <span>/</span>
+                                <a href="./register.html" target="_parent">注册</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 登录页面 -->
+        <div class="mask-pop" id="pop">
+            <div class="login">
+                <h2>用户登录<span class="close">X</span></h2>
+                <form action="#">
+                    <label id="login-err"></label>
+                    <div class="input-line">
+                        <input type="text" id="user_name">
+                        <span class="msg user_name_msg"></span>
+                        <label for=""><a href="#">注册新用户</a></label>
+                    </div>
+                    <div class="input-line">
+                        <input type="text" id="user_pwd">
+                        <span class="msg user_pwd_msg"></span>
+                        <label for=""><a href="#">忘记密码？</a></label>
+                    </div>
+                    <div class="input-line">
+                        <input type="checkbox" id="login_status">
+                        <label for="">记住登陆状态</label>
+                    </div>
+                    <div class="input-line">
+                        <button id="login_btn">登录</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- 标题 -->
+        <div class="title">
+            <div></div>
+            <div>
+                <span class="icon-contribute"></span>
+                <span>投稿</span>
+            </div>
+            <div></div>
+        </div>
+        <!-- 要求 -->
+        <h2><span class="icon icon-head"></span> 编者的话</h2>
+        <ul>
+            <li>投在这里的稿件，是向中国国家地理网投稿！我们审核通过并录用后，将呈现在您的个人专栏里，也可能将推荐到中国国家地理网的相关页面及中国国家地理新媒体各平台上（微信、微博、手机报等），会注明来源和作者，但不支付稿费。
+            </li>
+            <li>对于投稿，我们若要对标题、内容、说明等进行编辑和修改，将会与您取得联系，并且征得您的同意和认可。所以请在下面留下姓名、电话、QQ等联系方式，便于中国国家地理网能在第一时间联系到您，和您沟通稿件情况。投稿稿件一般会在10天内完成收录，并通知且认证该稿件作者。对于没有被中国国家地理网收录的稿件，我们不一一通知作者。
+            </li>
+            <li>如果中国国家地理旗下三本纸刊《中国国家地理》、《中华遗产》和《博物》对您的选题感兴趣，相关编辑人员会主动联系您。</li>
+            <li>没有体裁限制，但要求原创，抄袭、转载、软文一律绕道。我们不排斥一稿多投，但更欢迎独家首发稿件。</li>
+            <li>所有投稿者在投稿时即默认作品版权为投稿本人所有。且所有投稿作品不得侵犯第三方著作权及其他权利；如出现名誉权、著作权、肖像权等相关法律问题，一律由投稿作者本人自行承担。</li>
+            <li>如果需要就文章、图片等被忽略、被编删事宜需要与中国国家地理网编辑直接交流，邮件：hudong@dili360.net或cngdilijun@qq.com；致电：010-64865566-226。</li>
+        </ul>
+
+        <div class="input-line"><label>标题：</label><input type="text"></div>
+
+
+        <div id="div3"></div>
+        <p id="counter">还能输入几个字</p>
+        <div class="input-line"><label>姓名：</label><input type="text"></div>
+        <div class="input-line"><label>电话：</label><input type="text"></div>
+        <div class="input-line"><label>QQ：</label><input type="text"></div>
+        <div class="input-line">
+            <button id="submit">提交</button>
+        </div>
+
+    </main>
+
+
+    <!-- 页脚 -->
+    <iframe src="./footer.html" frameborder="0" class="footer" scrolling="no"></iframe>
+
+    <script src="../js/ajax.js"></script>
+    <script src="../js/header.js"></script>
+
+
+
+    <script src="../js/wangEditor.min.js"></script>
+    <script>
+        var E = window.wangEditor
+        var editor2 = new E('#div3')
+        editor2.create()
+    </script>
+
+</body>
+
+</html>

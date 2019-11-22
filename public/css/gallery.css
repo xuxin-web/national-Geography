@@ -1,0 +1,116 @@
+body{
+    background-color:#1d1d1d;
+}
+
+#main{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+#main .left-side{
+    width:178px;
+    border-left: 1px solid #050505;
+    line-height: 38px;
+    color: #fff;
+    margin-bottom: 50px;
+    width: 178px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#main .left-side .gallery-cate-link{
+    color:#fff;
+}
+
+#main .left-side .gallery-cate-item{
+    border-width: 1px 0px 1px 1px;
+    border-color: #2e2e2e;
+    border-bottom-color: #050505;
+    border-style: solid;
+    position: relative;
+    width:178px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#main .left-side .gallery-cate-item:first-of-type{
+    background: url(../imgs/gallery-icon.png) 45px 20px no-repeat #1d1d1d;
+    height: 74px;
+    line-height: 74px;
+}
+#main .left-side .gallery-cate-item:first-of-type .gallery-cate-link{
+    padding-left:35px;
+}
+
+#main .right-side{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: #333;
+    padding: 5px 20px 50px;
+}
+
+#main .right-side .detail{
+    color:#aaa;
+    font-size:12px;
+    font-family:"微软雅黑";
+}
+
+#main .right-side .date{
+    color:#666;
+    font-size:12px;
+    font-family:"宋体";
+}
+
+#main .right-side .gallery-block-lg{ 
+    flex-basis:33.33333333333333%;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: column;
+    padding:10px 5px;
+}
+
+
+#main .right-side .gallery-block-lg div.img{
+    background-color:#646464;
+    padding:5px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#main .right-side .gallery-block-lg div.img img{
+    display: block;
+    flex:1;
+    width: 320px;
+    height: 176px;
+}
+
+#main .right-side .gallery-block-small{ 
+    flex-basis: 16.666666%;
+    overflow: hidden;
+    padding:5px;
+    margin-bottom: 15px;
+}   
+/* 
+#main .right-side .gallery-block-small:nth-of-type(6n+1){
+    padding-left:10px;
+} 
+
+#main .right-side .gallery-block-small:nth-of-type(6n){
+    padding-right:10px;
+} */
+
+
+#main .right-side .gallery-block-small .img{
+    background-color: #646464;
+    padding:5px;
+    overflow: hidden;
+}
+
+#main .right-side .gallery-block-small img{ 
+    width:100%;
+    height: 80px;
+}

@@ -1,0 +1,123 @@
+body{
+    background-color: #dbdde0;
+}
+
+#main{
+    width:962px;
+    margin:20px auto;
+    background-color: #fff;
+    padding:20px;
+}
+
+#main .title{
+    display: flex;
+    padding: 20px;
+    font-family: "微软雅黑";
+    font-weight: 100;
+}
+#main .title>div{
+    width: 33.3333333333%;
+    text-align: center;
+    background: #dedfe1;
+    color: #333;
+    font-size: 20px;
+    height: 50px;
+    transform: skewX(-30deg);
+}
+
+#main .title>div:nth-of-type(2){
+    background-color: #1d95d9;
+    color:#fff;
+    position: relative;
+}
+
+#main .title>div:nth-of-type(2) span{
+    transform: skewX(30deg);
+    position: absolute;
+    width:40px;
+    height: 24px;
+    left:53%;
+    top:50%;
+    margin-top:-12px;
+    margin-left:-20px;
+}
+
+#main .title>div:nth-of-type(2) span.icon-contribute{
+    background: url(../imgs/newtabbg2.png) no-repeat 0 0px;
+    height: 20px;
+    width: 24px;
+    left:123px;
+}
+
+#main h2{
+    font-size:16px;
+    color: #323232;
+}
+
+#main ul{
+    counter-reset: count;
+    margin-bottom: 40px;
+}
+#main ul li{
+    display: flex;
+    margin-top: 15px;
+    color: #444;
+    font-family: "宋体";
+    line-height: 20px;
+    font-weight: lighter;
+    font-size: 12px;
+    counter-increment: count;
+}
+#main ul li::before{
+    content: counter(count);
+    color:white;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #666;
+    margin-right:8px;
+    flex-shrink: 0;
+}
+
+#main #counter{
+    padding: 10px 20px 10px 0;
+    margin-bottom:20px;
+    border-bottom: 1px solid #666;
+    text-align: right;
+}
+
+#main .input-line{
+    margin-bottom:20px;
+}
+
+#main .input-line label{
+    color:#333;
+    font-family:"宋体";
+    font-weight: 700;
+    display: inline-block;
+    width:70px;
+}
+
+#main .input-line input{
+    height: 25px;
+    padding: 1px 0 0 5px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    width: 200px;
+}
+
+#main button#submit{
+    width: 104px;
+    height: 28px;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    background: #323233;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>景观</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/sight.css">
+</head>
+
+<body>
+    <!-- 页首 -->
+    <header id="header">
+        <!-- 上部分 -->
+        <div class="part-one">
+            <div class="container logo">
+                <a class="link" href="./index.html"><img src="../imgs/logo-top.png" alt="国家地理"></a>
+                <div class="search">
+                    <input type="text" class="search_input">
+                    <img src="../imgs/search_btn.png" alt="search btn" class="search_btn">
+                </div>
+            </div>
+        </div>
+        <!-- 下部分 -->
+        <div class="part-two">
+            <div class="container">
+                <ul class="menu">
+                    <li><a class="link" href="index.html">首页</a></li>
+                    <li><a class="link" href="./gallery.html">画廊</a></li>
+                    <li class="active"><a class="link" href="#">景观</a></li>
+                    <li class="icon icon-activity-star"><a class="link" href="activity.html">活动</a></li>
+                </ul>
+                <ul class="tools">
+                    <li><a class="link" href="sight.html">投稿</a></li>
+                    <li id="login-box">
+                        <a class="icon icon-people"></a>
+                        <div class="login">
+                            <div class="login-item">
+                                <a class="link" href="#" id="login">登录</a>
+                                <span>/</span>
+                                <a class="link" href="./register.html" target="_parent">注册</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 登录页面 -->
+        <div class="mask-pop" id="pop">
+            <div class="login">
+                <h2>用户登录<span class="close">X</span></h2>
+                <form action="#">
+                    <label id="login-err"></label>
+                    <div class="input-line">
+                        <input type="text" id="user_name">
+                        <span class="msg user_name_msg"></span>
+                        <label for=""><a class="link" href="#">注册新用户</a></label>
+                    </div>
+                    <div class="input-line">
+                        <input type="text" id="user_pwd">
+                        <span class="msg user_pwd_msg"></span>
+                        <label for=""><a class="link" href="#">忘记密码？</a></label>
+                    </div>
+                    <div class="input-line">
+                        <input type="checkbox" id="login_status">
+                        <label for="">记住登陆状态</label>
+                    </div>
+                    <div class="input-line">
+                        <button id="login_btn">登录</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体部分 -->
+    <main class="container clearMargin-top" id="main">
+        <section id="main-content">
+            <div class="left clearMargin-top">
+                <div class="icon icon-magazine-cng"></div>
+                <h1>景观</h1>
+                <hr>
+                <h2>分享</h2>
+                <div class="icon icon-small-share"></div>
+            </div>
+            <div class="right">
+                <ul class='list'>
+                    <li>
+                        <h2>地文景观</h2>
+                        <ul class="list-item">
+                            <li><a class="link" href="#">平原</a></li>
+                            <li><a class="link" href="#">绿洲</a></li>
+                            <li><a class="link" href="#">戈壁</a></li>
+                            <li><a class="link" href="#">峡谷</a></li>
+                            <li><a class="link" href="#">峰林</a></li>
+                            <li><a class="link" href="#">钙华</a></li>
+                            <li><a class="link" href="#">石柱</a></li>
+                            <li><a class="link" href="#">火山</a></li>
+                            <li><a class="link" href="#">岩石</a></li>
+                            <li><a class="link" href="#">沙地</a></li>
+                            <li><a class="link" href="#">雅丹</a></li>
+                            <li><a class="link" href="#">山地</a></li>
+                            <li><a class="link" href="#">丘陵</a></li>
+                            <li><a class="link" href="#">高原</a></li>
+                            <li><a class="link" href="#">盆地</a></li>
+                            <li><a class="link" href="#">喀斯特</a></li>
+                            <li><a class="link" href="#">洞穴</a></li>
+                            <li><a class="link" href="#">石林</a></li>
+                            <li><a class="link" href="#">丹霞</a></li>
+                            <li><a class="link" href="#">雪山</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>水文景观</h2>
+                        <ul class="list-item">
+                            <li><a class="link" href="">湿地</a></li>
+                            <li><a class="link" href="">礁石</a></li>
+                            <li><a class="link" href="">冰川</a></li>
+                            <li><a class="link" href="">湖泊</a></li>
+                            <li><a class="link" href="">冲积扇</a></li>
+                            <li><a class="link" href="">三角洲</a></li>
+                            <li><a class="link" href="">岛屿</a></li>
+                            <li><a class="link" href="">半岛</a></li>
+                            <li><a class="link" href="">海岸</a></li>
+                            <li><a class="link" href="">河流</a></li>
+                            <li><a class="link" href="">瀑布</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>生物景观</h2>
+                        <ul class="list-item">
+                            <li><a class="link" href="#">热带雨林</a></li>
+                            <li><a class="link" href="#">草原</a></li>
+                            <li><a class="link" href="#">牧场</a></li>
+                            <li><a class="link" href="#">林地</a></li>
+                            <li><a class="link" href="#">农场</a></li>
+                            <li><a class="link" href="#">庄园</a></li>
+                            <li><a class="link" href="#">花地</a></li>
+                            <li><a class="link" href="#">梯田</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>气象与天象景观</h2>
+                        <ul class="list-item">
+                            <li><a class="link" href="#">观星地</a></li>
+                            <li><a class="link" href="#">海市蜃楼</a></li>
+                            <li><a class="link" href="#">云雾</a></li>
+                            <li><a class="link" href="#">极光</a></li>
+                            <li><a class="link" href="#">雾凇</a></li>
+                            <li><a class="link" href="#">星空天象</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>遗址与遗迹景观</h2>
+                        <ul class="list-item">
+                            <li><a class="link" href="">寺庙</a></li>
+                            <li><a class="link" href="">古塔</a></li>
+                            <li><a class="link" href="">古村</a></li>
+                            <li><a class="link" href="">古镇</a></li>
+                            <li><a class="link" href="">陵墓</a></li>
+                            <li><a class="link" href="">宫殿</a></li>
+                            <li><a class="link" href="">红色景区</a></li>
+                            <li><a class="link" href="">化石景观</a></li>
+                            <li><a class="link" href="">古典园林</a></li>
+                            <li><a class="link" href="">古道</a></li>
+                            <li><a class="link" href="">古楼</a></li>
+                            <li><a class="link" href="">祠堂</a></li>
+                            <li><a class="link" href="">岩壁画</a></li>
+                            <li><a class="link" href="">遗址</a></li>
+                            <li><a class="link" href="">碑石牌坊</a></li>
+                            <li><a class="link" href="">石窟</a></li>
+                            <li><a class="link" href="">石刻</a></li>
+                            <li><a class="link" href="">民居</a></li>
+                            <li><a class="link" href="">名人故居故里</a></li>
+                            <li><a class="link" href="">民俗村</a></li>
+                            <li><a class="link" href="">纪念园（馆/碑）</a></li>
+                            <li><a class="link" href="">古城</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>建筑与城市景观</h2>
+                        <ul class="list-item">
+                            <li><a class="link" href="">工业基地</a></li>
+                            <li><a class="link" href="">公园</a></li>
+                            <li><a class="link" href="">城市建筑</a></li>
+                            <li><a class="link" href="">现代园林</a></li>
+                            <li><a class="link" href="">铁路</a></li>
+                            <li><a class="link" href="">高速</a></li>
+                            <li><a class="link" href="">国道</a></li>
+                            <li><a class="link" href="">矿石公园</a></li>
+                            <li><a class="link" href="">桥梁</a></li>
+                            <li><a class="link" href="">运河</a></li>
+                            <li><a class="link" href="">水电站</a></li>
+                            <li><a class="link" href="">大坝</a></li>
+                            <li><a class="link" href="">水库</a></li>
+                            <li><a class="link" href="">电视塔</a></li>
+                            <li><a class="link" href="">农业基地</a></li>
+                            <li><a class="link" href="">公路</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>人文活动景观</h2>
+                        <ul class="list-item">
+                            <li><a class="link" href="">城区</a></li>
+                            <li><a class="link" href="">边城</a></li>
+                            <li><a class="link" href="">口岸</a></li>
+                            <li><a class="link" href="">博物馆</a></li>
+                            <li><a class="link" href="">科技馆</a></li>
+                            <li><a class="link" href="">展览馆</a></li>
+                            <li><a class="link" href="">影视城</a></li>
+                            <li><a class="link" href="">游乐园</a></li>
+                            <li><a class="link" href="">温泉</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>名录</h2>
+                        <ul class="list-item">
+                            <li><a class="link" href="">世界自然遗产</a></li>
+                            <li><a class="link" href="">世界文化遗产</a></li>
+                            <li><a class="link" href="">世界文化与自然双重遗产</a></li>
+                            <li><a class="link" href="">世界文化景观</a></li>
+                            <li><a class="link" href="">中国国家森林公园名录</a></li>
+                            <li><a class="link" href="">中国世界级自然保护区名录</a></li>
+                            <li><a class="link" href="">中国地质公园名录</a></li>
+                            <li><a class="link" href="">中国国家级自然保护区名录</a></li>
+                            <li><a class="link" href="">国家级非物质文化遗产名录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div  class="icon icon-open-sidebar"></div>
+        </section>
+        <aside id="main-side">
+            <h2 class="subtitle">推荐谈资</h2>
+            <ul class="topic-list">
+                <li>
+                    <a class="topic-item" href="#">
+                        <img src="../imgs/wKgBy1nBz1WAEsgvAACEKbom5lo053.jpg@!rw4" alt="极简">
+                        <h3>极简</h3>
+                        <p>由简入奢易，由奢入简难；削减不必要的物体，使人将注意力最大限度的集中于某一点，这种……</p>
+                        <p><span>0作者</span>
+                            |
+                            <span>0篇文章</span>|
+                            <span>14评论</span></p>
+                    </a></li>
+                <li>
+                    <a class="topic-item" href="#">
+                        <img src="../imgs/wKgBy1nBz1WAEsgvAACEKbom5lo053.jpg@!rw4" alt="极简">
+                        <h3>极简</h3>
+                        <p>由简入奢易，由奢入简难；削减不必要的物体，使人将注意力最大限度的集中于某一点，这种……</p>
+                        <p><span>0作者</span>
+                            |
+                            <span>0篇文章</span>|
+                            <span>14评论</span></p>
+                    </a></li>
+                <li>
+                    <a class="topic-item" href="#">
+                        <img src="../imgs/wKgBy1nBz1WAEsgvAACEKbom5lo053.jpg@!rw4" alt="极简">
+                        <h3>极简</h3>
+                        <p>由简入奢易，由奢入简难；削减不必要的物体，使人将注意力最大限度的集中于某一点，这种……</p>
+                        <p><span>0作者</span>
+                            |
+                            <span>0篇文章</span>|
+                            <span>14评论</span></p>
+                    </a></li>
+                <li>
+                    <a class="topic-item" href="#">
+                        <img src="../imgs/wKgBy1nBz1WAEsgvAACEKbom5lo053.jpg@!rw4" alt="极简">
+                        <h3>极简</h3>
+                        <p>由简入奢易，由奢入简难；削减不必要的物体，使人将注意力最大限度的集中于某一点，这种……</p>
+                        <p><span>0作者</span>
+                            |
+                            <span>0篇文章</span>|
+                            <span>14评论</span></p>
+                    </a></li>
+
+            </ul>
+        </aside>
+    </main>
+
+    <script src="../js/header.js"></script>
+</body>
+
+</html>

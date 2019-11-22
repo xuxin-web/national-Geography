@@ -1,0 +1,157 @@
+body{
+    background-image: url(../imgs/bodybg.gif);
+}
+
+#header{
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 0 6px #333;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+#header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .container>a>img{
+    height: 46px;
+}
+
+#header .container ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#header .container ul li:not(:last-of-type)::after{
+    content: "|";   
+}
+
+#header .container ul li a{
+    margin: 0 10px;
+    font-size: 12px;
+    color:#333;
+}
+
+#header .container ul li a:hover{
+    color: #c00;
+}
+
+#main{
+    margin-top:20px;
+}
+
+#main .container,
+#footer .container{
+    width:960px;
+}
+
+#main .container{
+    margin-top:20px;
+    background-color: #eee;
+    font-size:12px;
+    color:#666;
+}
+
+#main .container .title{
+    font-size:18px;
+    font-family:"微软雅黑";
+    text-indent:15px;
+    font-weight: 300;
+    border-radius: 4px 4px 0 0 ;
+    background-color: #c70102;
+    color:#fff;
+    height: 33px;
+    line-height: 33px;
+}
+
+#main .container .inputline{
+    height: 91px;
+    padding:20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+#main .container .inputline label{
+    display: inline-block;
+    width:175px;
+    height: 30px;
+    padding-right:5px;
+    line-height: 30px;
+    font-size:14px;
+    text-align: right;
+    
+}
+
+#main .container .inputline input{
+    background: url(../imgs/inputbg.png) 0 0 repeat-x #FBFBFB;
+    border: 1px solid #C1C1C1;
+    color: #444444;
+    font-size: 14px;
+    padding: 6px;
+    width: 300px;
+}
+
+#main .container .inputline p.text_info{
+    padding:5px  0 0 175px;
+    font-size:12px;
+    color:#666;
+}
+
+#main .container .inputline div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#main .container .inputline div img{
+    padding-left: 15px;
+}
+
+#main .container  p.tiaokuan{
+    padding-left:185px;
+}
+
+#main .container .inputline button#reg_btn{
+    margin: 10px 0 0 175px;
+    background: url(../imgs/reg_btn.png);
+    width: 210px;
+    height: 34px;
+    border: 0;
+    cursor: pointer;
+}
+
+#main .container .inputline button#reg_btn:hover{
+    background-position: left bottom;
+}
+
+#footer .container{
+    border-top: 1px solid #ddd;
+    background: #fff;
+    opacity: 0.99;
+    filter: alpha(opacity=99.9);
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer .container p{
+    padding: 12px 0;
+    color:#666;
+    font-size:12px;
+    font-family: "微软雅黑";
+    line-height: 2em;
+}
+#footer .container p a{
+    color:#333;
+}
+
+#footer .container p a:hover{
+    color: #F60;
+}
